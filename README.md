@@ -1,12 +1,22 @@
 # Selected Solutions to *Algebraic Number Theory and Fermat's Last Theorem*
 
-## Basic Informations
+This repository contains unofficial solutions, proofs, and supplementary study notes for the textbook *Algebraic Number Theory and Fermat's Last Theorem* (by Ian Stewart and David Tall). 
 
-This repository is my personal selected solutions to *Algebraic Number Theory and Fermat's Last Theorem*. Since I was self-reading this book, correctness might not be guaranteed and this repository is for reference only.
+## Background
 
-Solutions were made using [TexMacs](https://www.texmacs.org/), saved as `.tm` files. May switch to $LaTeX$ in the future.
+This project originated from a collaborative study seminar organized with a few peers. The material was studied independently over the summer. 
 
-## Contact me
+While this textbook also serves as a reference for the course **MAT 5210 - Advanced Abstract Algebra I** at my university, please note that these resources are based entirely on our informal seminar discussions and independent study, rather than any official course curriculum.
 
-For any errors in the solutions, please contact me by the email in my profile, I'll surely reply!
+The primary goal of this repository is to share our learning process and provide a helpful reference for other students and self-learners working through the text.
 
+## Project Structure
+
+- [ ] Chapter 1: Algebraic Background
+- [ ] Chapter 2: Algebraic Numbers
+
+## Disclaimer & Contributing
+
+These solutions are completely unofficial and are shared solely for educational purposes. Since they are the product of self-study and peer discussions, they may contain errors, typos, or incomplete proofs. 
+
+If you spot any mistakes, have suggestions for alternative approaches, or want to improve the clarity of the explanations, please feel free to contact me via email. Feedback and collaborative corrections are highly appreciated.

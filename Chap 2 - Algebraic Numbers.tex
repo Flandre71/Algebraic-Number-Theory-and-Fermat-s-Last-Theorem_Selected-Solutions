@@ -1,0 +1,267 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,enumerate,theorem}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\Nu}{\mathrm{N}}
+\newcommand{\Tau}{\mathrm{T}}
+\newcommand{\tmdummy}{$\mbox{}$}
+\newcommand{\tmem}[1]{{\em #1\/}}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+\newcommand{\tmverbatim}[1]{\text{{\ttfamily{#1}}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+\newenvironment{enumerateroman}{\begin{enumerate}[i.] }{\end{enumerate}}
+\newenvironment{tmindent}{\begin{tmparmod}{1.5em}{0pt}{0pt}}{\end{tmparmod}}
+\newenvironment{tmparmod}[3]{\begin{list}{}{\setlength{\topsep}{0pt}\setlength{\leftmargin}{#1}\setlength{\rightmargin}{#2}\setlength{\parindent}{#3}\setlength{\listparindent}{\parindent}\setlength{\itemindent}{\parindent}\setlength{\parsep}{\parskip}} \item[]}{\end{list}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\begin{document}
+
+\chapter*{2 Algebraic Numbers}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumeratealpha}
+    \item Algebraic, not integer.
+    
+    \item Algebraic integer.
+    
+    \item Algebraic integer.
+    
+    \item Algebraic integer.
+    
+    \item Algebraic, not integer.
+    
+    \item Algebraic integer.
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    See {\tmem{Example 2.3}}, we can easily get $\mathbb{Q} \left( \sqrt{3},
+    \sqrt[3]{5} \right) = \mathbb{Q} \left( \sqrt{3} + \sqrt[3]{5} \right)$.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Notice the minimal polynomial of $\sqrt[3]{7}$ over $\mathbb{Q}$ is $x^3 -
+    7$, which have roots
+    \[ \sqrt[3]{7}, \sqrt[3]{7} \omega, \sqrt[3]{7} \omega^2, \tmop{where}
+       \omega \tmop{is} \tmop{the} 3 \tmop{rd} \tmop{root} \tmop{of}
+       \tmop{unity} . \]
+    Therefore, the 3 monomorphisms will be
+    \[ \left\{\begin{array}{l}
+         \sigma_1 : \sigma_1 (a) = a, \sigma_1 \left( \sqrt[3]{7} \right) =
+         \sqrt[3]{7}\\
+         \sigma_2 : \sigma_2 (a) = a, \sigma_2 \left( \sqrt[3]{7} \right) =
+         \sqrt[3]{7} \omega\\
+         \sigma_3 : \sigma_3 (a) = a, \sigma_3 \left( \sqrt[3]{7} \right) =
+         \sqrt[3]{7} \omega
+       \end{array}\right., \tmop{where} a \tmop{is} \tmop{an} \tmop{arbitary}
+       \tmop{number} \tmop{in} \mathbb{Q} \]
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Let monomorphisms of $\mathbb{Q} \left( \sqrt{3}, \sqrt{5} \right) =
+    \mathbb{Q} \left( \sqrt{3} + \sqrt{5} \right) \longrightarrow \mathbb{C}$
+    be $\sigma_k, k \in \{ 1, 2, 3, 4 \}$ which holds its value in
+    $\mathbb{Q}$ and
+    \[ \left\{\begin{array}{l}
+         \sigma_1 : \sigma_1 \left( \sqrt{3} + \sqrt{5} \right) = \sqrt{3} +
+         \sqrt{5}\\
+         \sigma_2 : \sigma_2 \left( \sqrt{3} + 2 \sqrt{5} \right) = - \sqrt{3}
+         - \sqrt{5}\\
+         \sigma_3 : \sigma_3 \left( \sqrt{3} + 2 \sqrt{5} \right) = \sqrt{3} -
+         \sqrt{5}\\
+         \sigma_4 : \sigma_4 \left( \sqrt{3} + 2 \sqrt{5} \right) = - \sqrt{3}
+         + 2 \sqrt{5}
+       \end{array}\right. \]
+    Hence, the discriminant of $\mathbb{Q} \left( \sqrt{3} + \sqrt{5} \right)$
+    is
+    \[ \det \left( \left[\begin{array}{cccc}
+         1 & \sqrt{3} + \sqrt{5} & 8 + 2 \sqrt{15} & 18 \sqrt{3} + 14
+         \sqrt{5}\\
+         1 & - \sqrt{3} - \sqrt{5} & 8 + 2 \sqrt{15} & - 18 \sqrt{3} - 14
+         \sqrt{5}\\
+         1 & \sqrt{3} - \sqrt{5} & 8 - 2 \sqrt{15} & 18 \sqrt{3} - 14
+         \sqrt{5}\\
+         1 & - \sqrt{3} + \sqrt{5} & 8 - 2 \sqrt{15} & - 18 \sqrt{3} + 14
+         \sqrt{5}
+       \end{array}\right] \right) = 1920 = 2^7 \times 3 \times 5 \]
+    Let $\sqrt{3} + \sqrt{5} = \theta$. Therefore, we have to examine whether
+    there exist $\alpha$ such that $\frac{1}{2} (\lambda_1 + \lambda_2 \theta
+    + \lambda_3 \theta^2 + \lambda_4 \theta^3)$ is an algebraic integer where
+    $\lambda_k \in \{ 0, 1, 2, 3 \}$. We first check the norm of it
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumerateroman}
+    \item Since the minimal polynomial is $x^4 - 2$, whose roots are
+    $\sqrt[4]{2}, \omega \sqrt[4]{2}, \omega^2  \sqrt[4]{2}, \omega^3 
+    \sqrt[4]{2}$ where $\omega$ is the 4th root of the unity. The 4
+    monomorphisms $\sigma_k$ are those holding the value on $\mathbb{Q}$ and
+    \[ \left\{\begin{array}{l}
+         \sigma_1 : \sigma_1 \left( \sqrt[4]{2} \right) = \sqrt[4]{2}\\
+         \sigma_2 : \sigma_2 \left( \sqrt[4]{2} \right) = \omega \sqrt[4]{2}\\
+         \sigma_3 : \sigma_3 \left( \sqrt[4]{2} \right) = \omega^2 
+         \sqrt[4]{2}\\
+         \sigma_4 : \sigma_4 \left( \sqrt[4]{2} \right) = \omega^3 
+         \sqrt[4]{2}
+       \end{array}\right. \]
+    \item As we know from {\tmem{i)}}, the minimal polynomial is $x^4 - 2$
+    
+    \item
+    \begin{enumeratealpha}
+      \item $\Large{\Pi}_{k = 1}^4 \left( x - \sigma_k \left( \sqrt[4]{2}
+      \right) \right) = x^4 - 2$
+      
+      \item $\Large{\Pi}_{k = 1}^4 \left( x - \sigma_k \left( \sqrt{2} \right)
+      \right) = (x^2 - 2)^2$
+      
+      \item $\Large{\Pi}_{k = 1}^4 (x - \sigma_k (2)) = (x - 2)^4$
+      
+      \item $\Large{\Pi}_{k = 1}^4 \left( x - \sigma_k \left( \sqrt{2} + 1
+      \right) \right) = (x^2 - 2 x - 1)^2$
+    \end{enumeratealpha}
+  \end{enumerateroman}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    When $p = 3$, we follows from the book by checking the trace first:
+    \[ \Tau (\alpha) = \lambda_1 \in \mathbb{Z}, \tmop{which} \tmop{is}
+       \tmop{useless} \]
+    We then compute the norm:
+    \begin{eqnarray*}
+      \Nu (a + b \theta + c \theta^2) & = & (a + b \theta + c \theta^2)  (a +
+      b \omega \theta + c \omega^2 \theta^2)  (a + b \omega^2 \theta + c
+      \omega \theta^2)\\
+      & = & a^3 + 5 b^3 + 25 c^3 - 15 abc\\
+      & \equiv & 0 (\tmop{mod} 27)
+    \end{eqnarray*}
+    Hence,
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  \ 
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumeratealpha}
+    \item $\mathbb{Q} \left( \sqrt{2}, \sqrt{3} \right) = \mathbb{Q} \left(
+    \sqrt{2} + \sqrt{3} \right)$
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  \ 
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Suppose it is not a integral basis, and denote the additive group
+    $\alpha_1, \ldots, \alpha_n$ generated by $G$. Therefore $G$ must be a
+    subgroup of $\mathfrak{O}$, and it's discriminant cannot be equal to $d$.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    The problem is trivial since any monomorphisms in the problem holds the
+    value in  Q .
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Let
+    \[ \left\{\begin{array}{l}
+         K_1 = \mathbb{Q} (x^6 - 1)\\
+         K_2 = \mathbb{Q} (x^3 - 1)
+       \end{array}\right. \]
+    In this case, from {\tmem{Exercise 11}} we have
+    \[ \left\{\begin{array}{l}
+         \Nu_{K_1} (1) = 6\\
+         \Nu_{K_2} (1) = 3
+       \end{array}\right. \]
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumerateroman}
+    \item The n monomorphisms have the same forms and prooves as those in
+    {\tmem{Theorem 2.4}}.
+    
+    \item $\Nu_{K / L} (\alpha_1 \alpha_2) = \Large{\Pi}_{k = 1}^n \sigma_k
+    (\alpha_1 \alpha_2) = \Large{\Pi}_{k = 1}^n \sigma_k (\alpha_1) 
+    \Large{\Pi}_{k = 1}^n \sigma_k (\alpha_2) = \Nu_{K / L} (\alpha_1) \Nu_{K
+    / L} (\alpha_1)$
+    
+    $\Tau_{K / L} (\alpha_1 + \alpha_2) = \Large{\Sigma}_{k = 1}^n \sigma_k
+    (\alpha_1 + \alpha_2) = \Large{\Sigma}_{k = 1}^n \sigma_k (\alpha_1) +
+    \Large{\Sigma}_{k = 1}^n \sigma_k (\alpha_2) = \Tau_{K / L} (\alpha_1) +
+    \Tau_{K / L} (\alpha_2)${\hspace*{\fill}}$Q.E.D$
+    
+    \item
+    
+    \item \tmverbatim{(I suppose the author means} $\Nu_{K / L} (\alpha)$
+    \tmverbatim{since} $\sqrt{\alpha}$ \tmverbatim{is not in} $K$
+    
+    Field $K$ have minimal polynomial $x^2 - \sqrt{3}$,which has roots
+    $\sqrt[4]{3}, - \sqrt[4]{3}$, over $Q$.
+    \begin{enumerateroman}
+      \item When $\alpha = \sqrt[4]{3}$, $\Nu_{K / L} (\alpha) = \sqrt[4]{3} 
+      \left( - \sqrt[4]{3} \right) = - \sqrt{3}$, $L_{K / L} (\alpha) =
+      \sqrt[4]{3} - \sqrt[4]{3} = 0$.
+      
+      \item When $\alpha = \sqrt[4]{3} + \sqrt{3}$, $\Nu_{K / L} (\alpha) =
+      \left( \sqrt[4]{3} + \sqrt{3} \right)  \left( - \sqrt[4]{3} + \sqrt{3}
+      \right) = 3 - \sqrt{3}$, $L_{K / L} (\alpha) = \left( \sqrt[4]{3} +
+      \sqrt{3} \right) + \left( - \sqrt[4]{3} + \sqrt{3} \right) = 2
+      \sqrt{3}$.
+    \end{enumerateroman}
+  \end{enumerateroman}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumerateroman}
+    \item $\Nu_{K / L} \left( \sqrt{3} \right) = \sqrt{3}  \sqrt{3} = 3$,
+    $N_{K / \mathbb{Q}} (\alpha) = \sqrt{3}  \left( - \sqrt{3} \right) 
+    \sqrt{3}  \left( - \sqrt{3} \right) = 9$.
+    
+    \item $L_{K / L} \left( \sqrt{3} \right) = \sqrt{3} + \sqrt{3} = 2
+    \sqrt{3}$, $L_{K / \mathbb{Q}} (\alpha) = \sqrt{3} + \left( - \sqrt{3}
+    \right) + \sqrt{3} + \left( - \sqrt{3} \right) = 0$.
+  \end{enumerateroman}
+\end{exercise}
+
+\end{document}

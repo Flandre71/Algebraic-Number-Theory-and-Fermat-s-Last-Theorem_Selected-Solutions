@@ -1,0 +1,232 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,enumerate,theorem}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\tmdummy}{$\mbox{}$}
+\newcommand{\tmverbatim}[1]{\text{{\ttfamily{#1}}}}
+\newenvironment{enumeratealpha}{\begin{enumerate}[a{\textup{)}}] }{\end{enumerate}}
+\newenvironment{enumerateroman}{\begin{enumerate}[i.] }{\end{enumerate}}
+\newenvironment{tmindent}{\begin{tmparmod}{1.5em}{0pt}{0pt}}{\end{tmparmod}}
+\newenvironment{tmparmod}[3]{\begin{list}{}{\setlength{\topsep}{0pt}\setlength{\leftmargin}{#1}\setlength{\rightmargin}{#2}\setlength{\parindent}{#3}\setlength{\listparindent}{\parindent}\setlength{\itemindent}{\parindent}\setlength{\parsep}{\parskip}} \item[]}{\end{list}}
+{\theorembodyfont{\rmfamily\small}\newtheorem{exercise}{Exercise}}
+%%%%%%%%%% End TeXmacs macros
+
+\begin{document}
+
+\chapter*{1 Algebraic Background}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Domain $\mathbb{Z}$ is not a field.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumeratealpha}
+    \item irreducible
+    
+    \item $(x + 13) (x - 13)$
+    
+    \item $(x + 1) (x^2 + 1)$
+    
+    \item Irreducibility can be obtained by computing the cases of $x \in \{ -
+    3, - 2, - 1, 0, 1 \}$ and checking \ monotonicity.
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    $x^2 - 1 = (x + 1) (x - 1)$
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    Yes.
+    
+    In fact, for any field $F$ and $f (x) \in F [x]$. We'll prove $\exists K /
+    F, s.t.f$ have multiple roots in $K \Longleftrightarrow f, f'$ are not
+    relatively prime: Let $\alpha$ be a root of $f$, $f (x) = (x - \alpha) g
+    (x)$. Now $f' (x) = g (x) + (x - \alpha) g' (x)$. Substituing $x =
+    \alpha$, we'll see that $f' (\alpha) = 0 \Leftrightarrow g (\alpha) = 0
+    \Leftrightarrow f (x)$ has multiple roots.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumerateroman}
+    \item $x^4 + 1$
+    
+    \item $x^4 - 2 x^2 + 9$
+    
+    \item $x^3 - 6 x^2 + 12 x - 9$
+  \end{enumerateroman}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumeratealpha}
+    \item 2
+    
+    \item 1
+    
+    \item 4
+    
+    \item 3
+    
+    \item infinite
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    It is an algebraic extension for sure since its generators are all
+    algebraic elements.
+    
+    However, it's not finite since the minimal polynomial of each of the
+    generators can be arbitrarily high.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumeratealpha}
+    \item $s_1^2 - 2 s_2$
+    
+    \item $s_1^3 - 3 s_1 s_2$
+    
+    \item It's not symmetric.
+    
+    \item It's not symmetric.
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumerateroman}
+    \item We can prove $\Delta$ is antisymmetic by comparing the definition of
+    even permutations and components of $\Delta$.
+    
+    \item First, we'll prove that for $f (x_1, x_2, \ldots, x_n) \in
+    \mathbb{Z} [x_1, x_2, \ldots, x_n]$ which is antisymmetric, $\Delta \mid f
+    (x_1, x_2, \ldots, x_n)$: To prove this, we only have to prove that
+    $\exists i, j \in [1, n] \cap \mathbb{Z}$, let's say $i = 1, j = 2$, $(x_i
+    - x_j) \mid f (x_1, x_2, \ldots, x_n)$. Notice $f (x_1, x_2, \ldots, x_n)
+    \in (\mathbb{Z} [x_3, x_4, \ldots, x_n]) [x_1, x_2]$, we can have
+    \[ f (x_1, x_2, \ldots, x_n) = \Large{\Sigma}_{i, j \in [0, n] \cap
+       \mathbb{Z}} a_{i j} x_1^i x_2^j \]
+    where $a_{i j} \in \mathbb{Z} [x_3, x_4, \ldots, x_n]$. And because $f
+    (x_1, x_2, \ldots, x_n) = - f (x_2, x_1, \ldots, x_n)$, $a_{i j} = - a_{j
+    i}$, indicating $(x_1 - x_2) \mid f (x_1, x_2, \ldots, x_n)$. Thus,
+    $\Delta \mid f (x_1, x_2, \ldots, x_n)$.
+    
+    Now, following form the hint, we consider $f / \Delta$. It is a symmetic
+    polynomial, so it was consist of elementary symmetric polynomials.
+  \end{enumerateroman}
+\end{exercise}
+
+\begin{exercise}
+  \tmverbatim{I'm not quite sure about b) and d)}
+  \begin{enumeratealpha}
+    \item 42
+    
+    \item $\left[\begin{array}{ccc}
+      1 & 3 & 5\\
+      2 & - 4 & \\
+      7 & 2 & 9
+    \end{array}\right] \rightarrow \left[\begin{array}{ccc}
+      1 & 3 & 5\\
+      & 10 & - 10\\
+      & 11 & 14
+    \end{array}\right] \rightarrow \left[\begin{array}{ccc}
+      1 & 3 & 5\\
+      & 1 & 24\\
+      & 10 & - 10
+    \end{array}\right] \rightarrow \left[\begin{array}{ccc}
+      1 & 3 & 5\\
+      & 1 & 24\\
+      &  & - 250
+    \end{array}\right]$, the answer is 250.
+    
+    \item infinite
+    
+    \item $\left[\begin{array}{ccc}
+      41 & 32 & - 999\\
+      & 16 & 3\\
+      & 2 & 111
+    \end{array}\right] \rightarrow \left[\begin{array}{ccc}
+      41 & 50 & 0\\
+      & 16 & 3\\
+      & 2 & 111
+    \end{array}\right] \rightarrow \left[\begin{array}{ccc}
+      41 & 2 & - 9\\
+      & 16 & 3\\
+      & 2 & 111
+    \end{array}\right] \rightarrow \left[\begin{array}{ccc}
+      41 & 2 & - 9\\
+      & 2 & 111\\
+      &  & - 885
+    \end{array}\right]$, the answer is $412885 = 72, 570$.
+    
+    \item infinite
+  \end{enumeratealpha}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{enumerateroman}
+    \item The proff can be obtained by checking the definitions.
+    
+    \item The proff can be obtained by checking the definitions.
+    
+    \item I suppose it can't because we no longer have $1 m = m$, which means
+    that the values of mutiplication $km$ are no longer distributed to the
+    vectors in $M$.
+  \end{enumerateroman}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    They are $n \mathbb{Z}$.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  {\tmdummy}
+  
+  \begin{tmindent}
+    No. For example, $\mathbb{Z}$ has infinite numbers of submodules $n
+    \mathbb{Z}$.
+    
+    Such condition can be obtained by have $R$ as a finite ring.
+  \end{tmindent}
+\end{exercise}
+
+\begin{exercise}
+  \ 
+\end{exercise}
+
+\begin{exercise}
+  \ 
+\end{exercise}
+
+\end{document}
